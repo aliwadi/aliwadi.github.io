@@ -1,0 +1,106 @@
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: large;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #1565c0;
+}
+
+a:hover {
+    color: #217ee7;
+}
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #000000;
+    overflow: auto;
+    margin-bottom: 1in;
+}
+
+/* Navbar links */
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: #ff0000;
+}
+.navbar a.push {
+    margin-right: auto;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.navbar a.split {
+    float: right;
+    background-color: #000000;
+    color: white;
+}
+.navbar a.split:hover {
+    background-color: #ff0000;
+}
+
+/* Current/active navbar link */
+.active {
+    background-color: #aa0404;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        display: -block;
+        width: 100%;
+        text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+}
+
+#content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 520px;
+    padding: 32px;
+    line-height: 1.6em;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.icons {
+    list-style-type: none;
+    font-size: xx-large;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 320px;
+    margin: 1em auto;
+}
+
+.icons li {
+    display: inline;
+    width: 42px;
+}
+
+.icons a {
+    color: black;
+}
+
+.icons a:hover {
+    color: #ff0000;
+}
