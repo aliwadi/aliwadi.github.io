@@ -31,10 +31,16 @@ a:hover {
     font-size: 17px;
 }
 
+/* Right-aligned section inside the top navigation */
+.navbar-right {
+    float: right;
+}
+
 /* Navbar links on mouse-over */
 .navbar a:hover {
     background-color: #ff0000;
 }
+
 .navbar a.push {
     margin-right: auto;
 }
@@ -45,6 +51,7 @@ a:hover {
     background-color: #000000;
     color: white;
 }
+
 .navbar a.split:hover {
     background-color: #ff0000;
 }
@@ -54,18 +61,19 @@ a:hover {
     background-color: #aa0404;
 }
 
-/* Right-aligned section inside the top navigation */
-.navbar-right {
-    float: right;
-  }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 @media screen and (max-width: 400px) {
     .navbar a {
         float: none;
-        display: -block;
+        display: block;
         width: 100%;
-        text-align: left; /* If you want the text to be left-aligned on small screens */
+        text-align: left;
+        /* If you want the text to be left-aligned on small screens */
+    }
+
+    .navbar-right {
+        float: none;
     }
 }
 
@@ -76,9 +84,10 @@ a:hover {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    max-width: 520px;
-    padding: 32px;
+    max-width: 600px;
+    padding: 1in;
     line-height: 1.6em;
+    padding-top: 2in;
 }
 
 .avatar {
@@ -120,38 +129,51 @@ a:hover {
 
 /* Style the links inside the sidenav */
 #mySidenav a {
-    position: absolute; /* Position them relative to the browser window */
-    left: -80px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 100px; /* Set a specific width */
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Increase font size */
-    color: white; /* White text color */
-    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-  }
-  
-  #mySidenav a:hover {
-    left: 0; /* On mouse-over, make the elements appear as they should */
-  }
-  
-  /* The about link: 20px from the top with a green background */
-  #about {
+    position: absolute;
+    /* Position them relative to the browser window */
+    left: -80px;
+    /* Position them outside of the screen */
+    transition: 0.3s;
+    /* Add transition on hover */
+    padding: 15px;
+    /* 15px padding */
+    width: 100px;
+    /* Set a specific width */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 20px;
+    /* Increase font size */
+    color: white;
+    /* White text color */
+    border-radius: 0 5px 5px 0;
+    /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+    left: 0;
+    /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
     top: 20px;
     background-color: #04AA6D;
-  }
-  
-  #blog {
+}
+
+#blog {
     top: 80px;
-    background-color: #2196F3; /* Blue */
-  }
-  
-  #projects {
+    background-color: #2196F3;
+    /* Blue */
+}
+
+#projects {
     top: 140px;
-    background-color: #f44336; /* Red */
-  }
-  
-  #contact {
+    background-color: #f44336;
+    /* Red */
+}
+
+#contact {
     top: 200px;
-    background-color: #555 /* Light Black */
-  }
+    background-color: #555
+        /* Light Black */
+}
