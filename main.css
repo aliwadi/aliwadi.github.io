@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-    color: #217ee7;
+    color: #ff0000;
 }
 
 /* Style the navigation bar */
@@ -61,9 +61,8 @@ a:hover {
     background-color: #aa0404;
 }
 
-
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .navbar a {
         float: none;
         display: block;
@@ -84,10 +83,17 @@ a:hover {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    max-width: 600px;
+    max-width: 500px;
     padding: 1in;
     line-height: 1.6em;
     padding-top: 2in;
+}
+#content_2 {
+    position: absolute;
+    left: 50px;
+    right: 50px;
+    text-align: justify;
+    padding: 50px;
 }
 
 .avatar {
@@ -101,14 +107,14 @@ a:hover {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     max-width: 320px;
     margin: 1em auto;
 }
 
 .icons li {
     display: inline;
-    width: 42px;
+    width: 50px;
 }
 
 .icons a {
@@ -119,21 +125,13 @@ a:hover {
     color: #ff0000;
 }
 
-
-
-
-
-
-
-
-
 /* Style the links inside the sidenav */
 #mySidenav a {
     position: absolute;
     /* Position them relative to the browser window */
-    left: -80px;
+    left: -100px;
     /* Position them outside of the screen */
-    transition: 0.3s;
+    transition: 0.5s;
     /* Add transition on hover */
     padding: 15px;
     /* 15px padding */
@@ -145,35 +143,34 @@ a:hover {
     /* Increase font size */
     color: white;
     /* White text color */
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 15px 15px 0;
     /* Rounded corners on the top right and bottom right side */
 }
 
 #mySidenav a:hover {
     left: 0;
+    background-color: #ff0000; 
     /* On mouse-over, make the elements appear as they should */
 }
 
+#mySidenav .active{
+    background-color: #aa0404; 
+}
+
 /* The about link: 20px from the top with a green background */
-#about {
-    top: 20px;
-    background-color: #04AA6D;
+#H {
+    top: 30%;
+    background-color: #000000;
 }
-
-#blog {
-    top: 80px;
-    background-color: #2196F3;
-    /* Blue */
+#R {
+    top: 40%;
+    background-color: #000000;
 }
-
-#projects {
-    top: 140px;
-    background-color: #f44336;
-    /* Red */
+#T {
+    top: 50%;
+    background-color: #000000;
 }
-
-#contact {
-    top: 200px;
-    background-color: #555
-        /* Light Black */
+#cv {
+    top: 60%;
+    background-color: #000000
 }
