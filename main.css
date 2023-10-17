@@ -63,7 +63,7 @@ a:hover {
 
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-/*
+
 @media screen and (max-width: 400px) {
     .navbar a {
         float: none;
@@ -72,11 +72,19 @@ a:hover {
         text-align: left;
         
     }
-
     .navbar-right {
         float: none;
     }
-}*/
+}
+
+
+
+
+
+
+
+
+
 
 #content {
     position: absolute;
