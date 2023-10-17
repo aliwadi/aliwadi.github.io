@@ -63,19 +63,20 @@ a:hover {
 
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+/*
 @media screen and (max-width: 400px) {
     .navbar a {
         float: none;
         display: block;
         width: 100%;
         text-align: left;
-        /* If you want the text to be left-aligned on small screens */
+        
     }
 
     .navbar-right {
         float: none;
     }
-}
+}*/
 
 #content {
     position: absolute;
@@ -176,6 +177,7 @@ a:hover {
     background-color: #000000
 }
 
+
 /* The sidebar menu */
 .sidebar {
     height: 100%; /* 100% Full-height */
@@ -220,7 +222,7 @@ a:hover {
     cursor: pointer;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    padding: 25px 25px;
+    padding: 35px 35px;
     border: none;
     z-index: 1; /* Stay on top */
   }
@@ -232,11 +234,12 @@ a:hover {
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
     transition: margin-left .5s; /* If you want a transition effect */
-    padding: -2000px;
+    padding: -200px;
   }
   
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) 
   @media screen and (max-height: 1000px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
-  }
+  }*/
+  
