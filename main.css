@@ -25,10 +25,10 @@ a:hover {
 .navbar a {
     float: left;
     text-align: center;
-    padding: 12px;
+    padding: 15px;
     color: white;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 /* Right-aligned section inside the top navigation */
@@ -64,27 +64,17 @@ a:hover {
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .navbar a {
         float: none;
         display: block;
         width: 100%;
-        text-align: left;
-        
+        text-align: center;
     }
     .navbar-right {
         float: none;
     }
 }
-
-
-
-
-
-
-
-
-
 
 #content {
     position: absolute;
@@ -94,9 +84,9 @@ a:hover {
     transform: translate(-50%, -50%);
     text-align: center;
     max-width: 600px;
-    padding: 1in;
+    padding: 10%;
     line-height: 1.6em;
-    padding-top: 2in;
+    padding-top: 10%;
 }
 #content_2 {
     position: absolute;
