@@ -129,7 +129,12 @@ a:hover {
     .avatar {
         width: 0px;
     }
+    #content {
 
+    }
+    #content_2 {
+        top: 15%;
+    }
 }
 
 
