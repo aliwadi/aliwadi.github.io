@@ -19,6 +19,7 @@ a:hover {
     background-color: #000000;
     overflow: auto;
     margin-bottom: 1in;
+    z-index: 1;
 }
 
 /* Navbar links */
@@ -61,20 +62,6 @@ a:hover {
     background-color: #aa0404;
 }
 
-
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-
-@media screen and (max-width: 500px) {
-    .navbar a {
-        float: none;
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
-    .navbar-right {
-        float: none;
-    }
-}
 
 #content {
     position: absolute;
@@ -123,6 +110,28 @@ a:hover {
 .icons a:hover {
     color: #ff0000;
 }
+
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+    }
+    .navbar-right {
+        float: none;
+    }
+    .avatar {
+        width: 0px;
+    }
+}
+
+
+
 
 
 /* Style the links inside the sidenav */
