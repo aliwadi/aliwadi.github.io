@@ -197,8 +197,8 @@ a:hover {
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 500px) and (max-width: 500px) {
-    .sidebar {padding-top: 15px;}
+  @media screen and (max-width: 500px) {
+    .sidebar {padding-top: 15%;}
     .sidebar a {font-size: 18px;}
   }
   
