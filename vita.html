@@ -20,8 +20,8 @@
     <a href="research.html"><i class="fa fa-fw fa-search"></i> Research</a>
     <a class="active" href="teach.html"><i class="fa fa-fw fa-graduation-cap"></i> Teaching</a>
     <a href="vita.html"><i class="ai ai-cv"></i> </a>
-  </div>
-  <div id="main">  <button class="openbtn" onclick="openNav()">&#9776;</button> </div>
+</div>
+<div id="main"> <button class="openbtn" onclick="openNav()">&#9776;</button> </div>
 
 
 <head>
@@ -54,18 +54,35 @@
         crossorigin="anonymous" />
 </head>
 <section id="content_2">
-<h1 class="post-title">CV</h1>
-<article>
-    <p>If the embedded version of my CV does not work, you can download a copy <a href="cv.pdf"
-        target="_blank">here</a>.</p>
+    <h1 class="post-title">CV</h1>
+    <article>
+        <!-- <p>If the embedded version of my CV does not work, you can download a copy <a href="cv.pdf"
+                target="_blank">here</a>.</p> -->
 
-    <center>
-        <object data="cv.pdf#view=FitH&amp;pagemode=none" width="80%" height="800px" type="application/pdf">
-            <embed src="cv.pdf#view=FitH&amp;pagemode=none" width="80%" height="800px" type="application/pdf"></embed>
-        </object>
-    </center>
+        <center>
+            <!-- <object data="cv.pdf#view=FitH&amp;pagemode=none" width="100%" height="800px" type="application/pdf"
+                style="padding: 10px;">
+                <embed src="cv.pdf#view=FitH&amp;pagemode=none" width="100%" height="800px"
+                    type="application/pdf"></embed>
+            </object> -->
+            <object data="cv.pdf#view=FitH&amp;pagemode=none" width="100%" height="800px" type="application/pdf"
+                style="padding: 10px;">
+                <p>Unable to display PDF file. <a href="cv.pdf">Download</a> instead.</p>
+            </object>
+            <!-- <div id="adobe-dc-view" style="width: 100%;"></div>
+            <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+            <script type="text/javascript">
+                document.addEventListener("adobe_dc_view_sdk.ready", function () {
+                    var adobeDCView = new AdobeDC.View({ clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view" });
+                    adobeDCView.previewFile({
+                        content: { location: { url: "https://github.com/ali94wadi/ali94wadi.github.io/raw/main cv.pdf" } },
+                        metaData: { fileName: "cv.pdf" }
+                    }, { embedMode: "IN_LINE" });
+                }); -->
+            </script>
+        </center>
 
-</article>
+    </article>
 </section>
 
 <!-- <script>
