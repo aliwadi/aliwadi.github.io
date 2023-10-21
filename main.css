@@ -78,7 +78,7 @@ a:hover {
 #content_2 {
     position: absolute;
     top: 5%;
-    left: 0%;
+    left: 5%;
     text-align: justify;
     padding: 5%;
 }
@@ -133,7 +133,7 @@ a:hover {
 
     }
     #content_2 {
-        top: 15%;
+        top: 40px;
     }
 }
 
@@ -181,7 +181,7 @@ a:hover {
     cursor: pointer;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    padding: 1% 1%;/* 25px 25px */
+    padding: 20px 20px;/* 25px 25px 1% 1% */
     border: none;
     z-index: 1; /* Stay on top */
   }
