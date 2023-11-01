@@ -77,10 +77,11 @@ a:hover {
 }
 #content_2 {
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 50px;
+    left: 50px;
+    right: 20px;
     text-align: justify;
-    padding: 5%;
+    padding: 10px;
 }
 
 .avatar {
@@ -127,10 +128,10 @@ a:hover {
         float: none;
     }
     .avatar {
-        width: 0px;
+        width: 120px;
     }
     #content_2 {
-        top: 40px;
+        top: 50px;
     }
 }
 
@@ -178,7 +179,7 @@ a:hover {
     cursor: pointer;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    padding: 20px 20px;/* 25px 25px 1% 1% */
+    padding: 10px 10px;/* 25px 25px 1% 1% */
     border: none;
     z-index: 1; /* Stay on top */
   }
@@ -195,7 +196,7 @@ a:hover {
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-width: 500px) {
-    .sidebar {padding-top: 50px;}
+    .sidebar {padding-top: 150px;}
     .sidebar a {font-size: 18px;}
   }
   
