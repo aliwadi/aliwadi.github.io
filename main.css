@@ -79,7 +79,7 @@ a:hover {
     position: absolute;
     top: 50px;
     left: 50px;
-    right: 20px;
+    right: 50px;
     text-align: justify;
     padding: 10px;
 }
@@ -128,7 +128,7 @@ a:hover {
         float: none;
     }
     .avatar {
-        width: 120px;
+        width: 150px;
     }
     #content_2 {
         top: 50px;
