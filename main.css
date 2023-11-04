@@ -6,11 +6,11 @@ html {
 
 a {
     text-decoration: none;
-    color: #1565c0;
+    color: #1100ff;
 }
 
 a:hover {
-    color: #217ee7;
+    color: #ff0000;
 }
 
 #content {
