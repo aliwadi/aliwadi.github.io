@@ -146,9 +146,10 @@ a:hover {
 .sidebar .closebtn {
     position: absolute;
     top: 0px;
-    right: 5px;
+    right: 0px;
     font-size: 50px;
-    margin-left: 50px;
+    margin-right: 140px;
+    padding: 10px 10px;
 }
 
 /* The button used to open the sidebar */
