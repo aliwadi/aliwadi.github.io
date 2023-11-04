@@ -15,10 +15,10 @@ a:hover {
 
 #content {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     text-align: center;
     max-width: 600px;
     padding: 1%;
@@ -83,10 +83,17 @@ a:hover {
         width: 150px;
     }
 
-    #content_2 {
+    /*#content_2 {
         top: 50px;
         left: 10px;
         right: 10px;
+    }*/
+}
+@media screen and (max-width: 600px) {
+    #content_2 {
+        max-width: 600px;
+        left: 60px;
+        right: 60px;
     }
 }
 
@@ -214,8 +221,8 @@ a:hover {
 }
 
 .bibbase_group_body {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
