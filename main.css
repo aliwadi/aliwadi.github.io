@@ -13,56 +13,6 @@ a:hover {
     color: #217ee7;
 }
 
-/* Style the navigation bar */
-.navbar {
-    width: 100%;
-    background-color: #000000;
-    overflow: auto;
-    margin-bottom: 1in;
-    z-index: 1;
-}
-
-/* Navbar links */
-.navbar a {
-    float: left;
-    text-align: center;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-/* Right-aligned section inside the top navigation */
-.navbar-right {
-    float: right;
-}
-
-/* Navbar links on mouse-over */
-.navbar a:hover {
-    background-color: #ff0000;
-}
-
-.navbar a.push {
-    margin-right: auto;
-}
-
-/* Create a right-aligned (split) link inside the navigation bar */
-.navbar a.split {
-    float: right;
-    background-color: #000000;
-    color: white;
-}
-
-.navbar a.split:hover {
-    background-color: #ff0000;
-}
-
-/* Current/active navbar link */
-.active {
-    background-color: #aa0404;
-}
-
-
 #content {
     position: absolute;
     top: 50%;
@@ -75,11 +25,12 @@ a:hover {
     line-height: 1.6em;
     padding-top: 5%;
 }
+
 #content_2 {
     position: absolute;
     top: 50px;
     left: 50px;
-    right: 50px;
+    right: 1%;
     text-align: justify;
     padding: 10px;
 }
@@ -124,12 +75,15 @@ a:hover {
         text-align: center;
         padding: 5px;
     }
+
     .navbar-right {
         float: none;
     }
+
     .avatar {
         width: 150px;
     }
+
     #content_2 {
         top: 50px;
     }
@@ -137,73 +91,103 @@ a:hover {
 
 /* The sidebar menu */
 .sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #000000; /* Black*/
+    background-color: #000000;
+    /* Black*/
     box-shadow: 0 10px 40px -4px #000000;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 100px; /* Place content 60px from the top */
-    transition: 0.25s; /* 0.5 second transition effect to slide in the sidebar */
-  }
-  
-  /* The sidebar links */
-  .sidebar a {
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 100px;
+    /* Place content 60px from the top */
+    transition: 0.25s;
+    /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
     color: #ffffff;
     display: block;
     transition: 0.3s;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .sidebar a:hover {
+}
+
+.sidebar hr.solid {
+    border-bottom: 1px solid #ffffff;
+    margin-right: 10px;
+}
+
+.sidebar h4 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
     color: #ff0000;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidebar .closebtn {
+    display: inline;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #ff0000;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
     position: absolute;
     top: 0px;
     right: 5px;
     font-size: 50px;
     margin-left: 50px;
-  }
-  
-  /* The button used to open the sidebar */
-  .openbtn {
+}
+
+/* The button used to open the sidebar */
+.openbtn {
     font-size: 40px;
     cursor: pointer;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    padding: 10px 10px;/* 25px 25px 1% 1% */
+    padding: 10px 10px;
+    /* 25px 25px 1% 1% */
     border: none;
-    z-index: 1; /* Stay on top */
-  }
-  
-  .openbtn:hover {
+    z-index: 1;
+    /* Stay on top */
+}
+
+.openbtn:hover {
     background-color: #ff0000;
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s; /* If you want a transition effect */
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    /* If you want a transition effect */
     padding: -200px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-width: 500px) {
-    .sidebar {padding-top: 150px;}
-    .sidebar a {font-size: 18px;}
-  }
-  
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 500px) {
+    .sidebar {
+        padding-top: 150px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
 
 
-  /* BIBBASE CCS from https://bibbase.org/css/styles/default.css   https://bibbase.org/documentation */
+
+/* BIBBASE CCS from https://bibbase.org/css/styles/default.css   https://bibbase.org/documentation */
 #bibbase_header i {
     width: 16px;
     text-align: center;
@@ -238,13 +222,17 @@ img.bibbase_icon {
     vertical-align: text-top;
 
 
-    filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
-    filter: grayscale(100%); /* Current draft standard */
-    -webkit-filter: grayscale(100%); /* New WebKit */
+    filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale");
+    /* Firefox 3.5+ */
+    filter: grayscale(100%);
+    /* Current draft standard */
+    -webkit-filter: grayscale(100%);
+    /* New WebKit */
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
-    filter: gray; /* IE6+ */
+    filter: gray;
+    /* IE6+ */
 }
 
 img.bibbase_icon:hover {
@@ -300,8 +288,60 @@ img.bibbase_icon:hover {
 }
 
 .bibbase_artifact_badge {
-  width: 1.2em;
-  height: 1.2em;
+    width: 1.2em;
+    height: 1.2em;
 
-  vertical-align: text-top;
+    vertical-align: text-top;
+}
+
+
+ß
+
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    background-color: #000000;
+    overflow: auto;
+    margin-bottom: 1in;
+    z-index: 1;
+}
+
+/* Navbar links */
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Right-aligned section inside the top navigation */
+.navbar-right {
+    float: right;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+    background-color: #ff0000;
+}
+
+.navbar a.push {
+    margin-right: auto;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.navbar a.split {
+    float: right;
+    background-color: #000000;
+    color: white;
+}
+
+.navbar a.split:hover {
+    background-color: #ff0000;
+}
+
+/* Current/active navbar link */
+.active {
+    background-color: #aa0404;
 }
