@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--
+ <div class="navbar">
+  <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <div class="navbar-right">
+    <a href="research.html"><i class="fa fa-fw fa-search"></i> Research</a>
+    <a href="teach.html"><i class="fa fa-fw fa-graduation-cap"></i> Teaching</a>
+    <a href="vita.html"><i class="ai ai-cv"></i> </a>
+  </div>
+</div>  
+-->
+<!-- -->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <h4>Ali Wadi</h4>
+  <hr class="solid">
+  <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a class="active" href="bio.html"><i class="fa fa-fw fa-newspaper"></i> Biography</a>
+  <hr class="solid">
+  <a href="teach.html"><i class="fa fa-fw fa-graduation-cap"></i> Teaching</a>
+  <a href="research.html"><i class="fa fa-fw fa-search"></i> Research</a>
+  <a href="service.html"><i class="fa fa-fw fa-trophy"></i> Awards</a>
+  <a href="vita.html"><i class="ai ai-cv"></i> </a>
+  <hr class="solid">
+</div>
+<div id="main"> <button class="openbtn" onclick="openNav()">&#9776;</button> </div>
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Define title -->
+  <title>Ali's website</title>
+
+  <!-- Include favicon. Use, e.g., https://favicon.io/ -->
+  <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+
+  <!-- Include style sheets -->
+  <link rel="stylesheet" href="main.css" />
+
+  <!-- Fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet" />
+
+  <!-- Load FontAwesome (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" />
+
+  <!-- Load Academicons (for more icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css"
+    integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+    crossorigin="anonymous" />
+</head>
+
+<body>
+  <section id="content_2">
+
+
+    <!-- Text -->
+    <h2>Biography</h2>
+    <hr>
+    <p align="justify">
+      Ali Wadi received his B.Sc. (cum laude) and M.Sc. degrees in Mechanical Engineering from the American University
+      of Sharjah, Sharjah, United Arab Emirates, in 2015 and 2017, respectively.
+      <br>
+      He is currently a Laboratory Instructor with the Department of Mechanical Engineering at the American University
+      of Sharjah (United Arab Emirates). His research interests include robotics, modeling, nonlinear dynamics, control
+      systems, drug delivery systems, stochastic estimation, and sensor fusion. He published over 20 papers in leading
+      refereed journals and conference proceedings.
+    </p>
+    <hr>
+
+    <H2>Education</H2>
+    <p align="justify"><b>M.Sc., <a href="https://www.aus.edu/cen/department-of-mechanical-engineering">Mechanical
+          Engineering</a>, <a href="https://www.aus.edu">American University
+          of Sharjah</a>, Sharjah, UAE (2016 - 2017)</b> <br> <b>Thesis:</b> <i>Modeling and Guidance of an Underactuated Autonomous Underwater Vehicle. </i>
+    </p>
+
+    <p align="justify"><b>B.Sc., <a href="https://www.aus.edu/cen/department-of-mechanical-engineering">Mechanical
+          Engineering</a>, <a href="https://www.aus.edu">American University
+          of Sharjah</a>, Sharjah, UAE (2011 - 2015)</b> <br> <b>Honors:</b> <i>cum laude. </i>
+    </p>
+<hr>
+  </section>
+</body>
+
+
+<script>
+  /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "200px";
+    document.getElementById("main").style.marginLeft = "-200px";
+  }
+  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+</script>
+
+</html>

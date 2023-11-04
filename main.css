@@ -134,6 +134,7 @@ a:hover {
     color: #ff0000;
     display: inline;
     transition: 0.3s;
+    padding-left: 8px;
 }
 
 /* When you mouse over the navigation links, change their color */
