@@ -29,8 +29,8 @@ a:hover {
 #content_2 {
     position: absolute;
     top: 50px;
-    left: 5%;/*10 px*/
-    right: 5%;
+    left: 10%;/*10 px*/
+    right: 10%;
     text-align: justify;
     padding: 10px;
 }
