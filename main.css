@@ -32,6 +32,7 @@ a:hover {
     left: 10%;/*10 px*/
     right: 10%;
     text-align: justify;
+    font-size: large;
     padding: 10px;
 }
 
@@ -335,9 +336,11 @@ img.bibbase_icon:hover {
     padding: 10px;
     color: white;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
 }
-
+.nav-tab a:hover {
+    background-color: #ff0000;
+}
 /* Right-aligned section inside the top navigation */
 .navbar-right {
     float: right;
